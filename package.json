@@ -1,0 +1,17 @@
+{
+  "name": "studingTS",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:live": "tsc -w --target 'es2020' src/*.ts",
+    "start": "nodemon src/01-index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.6",
+    "tsc": "^1.20150623.0"
+  }
+}
