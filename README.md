@@ -1,12 +1,25 @@
 # Here I write all important TypeScript file to practice
 
-fist we need setings TS in package.json
+Fist we need setings TS. Install dependencies:
 
 ```json
-  "scripts": {
-    "build:live": "tsc -w --target 'es2020' src/*.ts"
-  },
+  "devDependencies": {
+    "nodemon": "^2.0.6",
+    "sucrase": "^3.16.0",
+    "typescript": "^4.1.2"s
+  }
 ```
 
--w: Listing .ts and compile
---target: Slesct ecmaScript
+Create a file _nodemon.json_:
+
+```json
+  {
+    "watch": ["src"],
+    "ext": "ts",
+    "execMap": {
+      "ts": "sucrase-node src/index.ts"
+    } 
+  }
+```
+
+Now you can run nodemon, and node run TS.
