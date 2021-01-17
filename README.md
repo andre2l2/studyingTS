@@ -6,7 +6,7 @@ Fist we need setings TS. Install dependencies:
   "devDependencies": {
     "nodemon": "^2.0.6",
     "sucrase": "^3.16.0",
-    "typescript": "^4.1.2"s
+    "typescript": "^4.1.2"
   }
 ```
 
@@ -23,3 +23,5 @@ Create a file _nodemon.json_:
 ```
 
 Now you can run nodemon, and node run TS.
+
+> folder -> src/*.ts
