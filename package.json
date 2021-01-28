@@ -1,13 +1,13 @@
 {
-  "name": "studingTS",
+  "name": "typesript",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev:ts": "nodemon src/*.ts"
+    "ts:w": "tsc -w"
   },
   "keywords": [],
-  "author": "",
+  "author": "Andre Ferreira",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^2.0.6",
