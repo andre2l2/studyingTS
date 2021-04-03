@@ -3,7 +3,7 @@
         "target": "ES2018",
         "outDir": "src/js",
         "noEmitOnError": true,
-        "noImplicitAny": false,
+        "noImplicitAny": true,
         "removeComments": true
     },
     "include": [
