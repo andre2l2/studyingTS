@@ -4,7 +4,8 @@
         "outDir": "src/js",
         "noEmitOnError": true,
         "noImplicitAny": true,
-        "removeComments": true
+        "removeComments": true,
+        "experimentalDecorators": true
     },
     "include": [
         "src/ts/**/*"
