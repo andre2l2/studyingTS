@@ -1,11 +1,17 @@
-function users<T>(user: T): T {
-    return user;
+function users<T>(obj: T): T {
+    const dateNow = new Date();
+    
+    return {
+        ...obj,
+        dateNow
+    }
 }
 
-const named = users<object>({
-    name: "Algusto",
-    email: "algusto@g.com"
-});
+interface user {
+    name: string;
+    old: number;
+    sal?: number;
+}
 
-
-
+const resp = users<user>({ name: "Andre", old: 22 });
+console.log(resp);
